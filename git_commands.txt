@@ -1,0 +1,55 @@
+# Git Assignment – Commands and Explanations
+
+## 1. Repository Setup
+
+1. `mkdir git-assignment` – Creates a new project directory.
+2. `cd git-assignment` – Navigates into the project directory.
+3. `touch index.html about.html` – Creates two HTML files.
+4. `git init` – Initializes a new local Git repository.
+5. `git config --global user.name "Your Name"` – Configures the Git username.
+6. `git config --global user.email "your-email@example.com"` – Configures the Git email.
+7. `git status` – Displays the current repository status.
+
+## 2. Git Workflow
+
+8. `git add .` – Adds all eligible files to the staging area.
+9. `git commit -m "Initial commit: Add HTML files"` – Creates the initial commit.
+10. `git add index.html` – Stages changes to index.html.
+11. `git commit -m "Update homepage content"` – Records the homepage changes.
+12. `git branch feature` – Creates a new branch named feature.
+13. `git switch feature` – Switches to the feature branch.
+14. `git branch` – Lists all local branches.
+15. `git add about.html` – Stages changes to about.html.
+16. `git commit -m "Add feature information to about page"` – Commits feature branch changes.
+17. `git switch main` – Switches back to the main branch.
+18. `git merge feature` – Merges feature into main.
+19. `git log --oneline --graph --all` – Displays commit history and branch relationships.
+
+## 3. Git Ignore
+
+20. `touch .gitignore` – Creates the Git ignore configuration file.
+21. `mkdir temp` – Creates a temporary directory for testing.
+22. `touch debug.log` – Creates a sample log file.
+23. `touch temp/test.txt` – Creates a sample file inside temp.
+
+## 4. Undo Operation
+
+24. `touch contact.html` – Creates an additional HTML file.
+25. `git add contact.html` – Stages the contact page.
+26. `git commit -m "Add contact page"` – Creates an additional commit.
+27. `git revert HEAD` – Reverses the latest commit by creating a new commit.
+
+## 5. GitHub Integration
+
+28. `git remote add origin <repository-url>` – Connects the local repository to GitHub.
+29. `git branch -M main` – Renames the current branch to main.
+30. `git push -u origin main` – Pushes the main branch to GitHub.
+31. `git push -u origin feature` – Pushes the feature branch to GitHub.
+32. `git remote -v` – Displays configured remote repositories.
+33. `git branch -a` – Lists local and remote branches.
+
+## 6. Final Documentation
+
+34. `git add git_commands.txt` – Stages the command documentation.
+35. `git commit -m "Add Git command documentation"` – Commits the documentation file.
+36. `git push` – Pushes the latest committed changes to GitHub.
